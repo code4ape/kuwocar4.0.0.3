@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@android:style/Theme.Light" />
+    <style name="ArtistStyle" parent="@style/TextStyle1" />
+    <style name="KuwoMvSeekBar">
+        <item name="android:padding">2.0dip</item>
+        <item name="android:maxHeight">6.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/mv_player_seekbar_style</item>
+        <item name="android:minHeight">6.0dip</item>
+        <item name="android:thumb">@drawable/mv_icon_pointer</item>
+        <item name="android:thumbOffset">-2.0dip</item>
+    </style>
+    <style name="KuwoProgressBar">
+        <item name="android:padding">2.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/player_progressbar_style</item>
+        <item name="android:minHeight">6.0dip</item>
+    </style>
+    <style name="KuwoSeekBar">
+        <item name="android:padding">2.0dip</item>
+        <item name="android:maxHeight">6.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/player_seekbar_style</item>
+        <item name="android:minHeight">6.0dip</item>
+        <item name="android:thumb">@drawable/home_icon_pointer</item>
+        <item name="android:thumbOffset">@dimen/seekbar_thumb_offset</item>
+    </style>
+    <style name="SongNameStyle" parent="@style/TextStyle1" />
+    <style name="TextMainTitleStyle">
+        <item name="android:textSize">@dimen/text_size_6x</item>
+        <item name="android:textColor">@drawable/text_color_main_title_selector</item>
+    </style>
+    <style name="TextStyle1">
+        <item name="android:textSize">@dimen/text_size_5x</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ccffffff</item>
+    </style>
+    <style name="TextStyle2">
+        <item name="android:textSize">@dimen/text_size_3x</item>
+        <item name="android:textColor">#4cffffff</item>
+    </style>
+    <style name="TextStyle3">
+        <item name="android:textSize">@dimen/text_size_3x</item>
+        <item name="android:textColor">#4cffffff</item>
+    </style>
+    <style name="TimeStyle" parent="@style/TextStyle1" />
+    <style name="WelcomeTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

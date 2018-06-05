@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_state" android:background="@color/background_color_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_state" android:layout_width="@dimen/x120" android:layout_height="@dimen/x120" android:src="@drawable/default_nodata_errortip_nor" />
+        <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_music_list" android:gravity="center" android:id="@id/tv_name" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_music_list" android:gravity="center" android:id="@id/tv_detail" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_loading" android:layout_width="@dimen/x40" android:layout_height="@dimen/x40" android:layout_margin="@dimen/padding_1x" android:src="@drawable/anim_loading" />
+        <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_loading" android:gravity="center" android:id="@id/tv_loading" android:padding="@dimen/padding_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载..." />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:id="@id/layout_load_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/background_color_mv_playlist" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_pull_loading" android:layout_width="@dimen/x40" android:layout_height="@dimen/x40" android:src="@drawable/anim_pull_loading" />
+            <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_loading" android:gravity="center" android:id="@id/tv_load_more" android:padding="@dimen/padding_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载..." />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

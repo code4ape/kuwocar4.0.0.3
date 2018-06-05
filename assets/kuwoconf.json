@@ -1,0 +1,46 @@
+{
+  "version":1,
+  "isMvPlayerReleaseWhenUIPause":1,//0表示回收mvpalyer 当界面puase的时候，1表示不回收
+  "isMirror":1,//0 表示车镜 1表示车机
+  "showDownload":0,//0显示下载，1不显示
+  "theme":0,//0默认 1.深蓝
+  "showMv":0,//0显示mv
+  "showMvVolumeAdjust":0,//0显示mv音量调节
+  "showMvBrightnessAdjust":0,//0显示mv亮度调节
+  "showExitDialog":0,//0表示显示弹框 1，直接退出按钮 2.表示直接进入后台
+  "showNotWifiDialog":0,//0显示进入程序时wifi环境提示
+  "fullScreen":0,//0全屏 1非全屏
+  "showNav":0,//0显示左侧返回和主页按钮
+  "showOPs":0,//0表示显示列表页面的操作栏，1表示不显示
+  "handleMediaButton":0,
+  "registerMediaButton":0,//0表示响应媒体键,1表示不响应媒体键
+  "isLosslessDownload":0,//0表示支持无损音质下载,1表示不支持无损音质下载
+  "mainPage":[
+    //以下是主页item的顺序与是否显示。0为显示，1.为不显示
+    {"main_recent":0},
+    {"main_recommend":0},
+    {"main_radio":0},
+    {"main_mv":0},
+    {"main_top":0},
+    {"main_favourite":0},
+    {"main_musicClass":0},
+    {"main_personalRecommend":0},
+    {"main_local":0},
+    {"main_my":0},
+    {"main_setting":0},
+    {"main_login":0}
+  ],
+  "my":{
+    "my_login":0//是否显示我的音乐中的登录按钮
+  },
+  "setting":{
+    "setting_listen":0,// 0,1,2：表示显示试听音质同事设置器默认值为：自动选择，
+    //流畅音质和高品音质，10，11，12表示不显示且设置相应的默认值
+    "setting_download":0,//0,1,2,3,4显示，10，11，12，13，14表示不显示
+    "setting_clear":0,//0 显示，1不显示
+    "setting_downloadWhenListen":0,//0，1显示并默认开启和关闭边听边存，10，11不显示
+    "setting_about":0,//必须显示，无法调节
+    "setting_checkUpdate":0,//0显示检查更新，1.隐藏检查更新
+    "setting_exit":0//0显示退出按钮，1.隐藏退出按钮
+  }
+}

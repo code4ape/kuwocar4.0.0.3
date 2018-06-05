@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/padding_2x" android:paddingRight="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_title_bar" android:paddingTop="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="@dimen/y70" android:layout_alignParentLeft="true" />
+        <ToggleButton android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_music_list" android:gravity="center|left" android:id="@id/tb_page_indicator" android:background="@drawable/btn_page_indicator" android:padding="@dimen/padding_1x" android:layout_width="@dimen/x180" android:layout_height="@dimen/y60" android:textOn="已下载" android:textOff="下载中" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

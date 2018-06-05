@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_hotwords" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_kuwo_local_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门搜索:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_2x" android:textColor="@color/text_color_kuwo_local_name" android:id="@id/tv_chanage_hotwords" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="换一换" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_hotwords" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/layout_state" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_3x" android:id="@id/tv_search_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="搜索历史:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_search_history" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_search_history_hotwords" android:id="@id/tv_clear_history" android:padding="@dimen/padding_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清空历史记录" />
+</LinearLayout>

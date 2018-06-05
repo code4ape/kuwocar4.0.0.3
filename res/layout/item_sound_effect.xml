@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_item_background" android:layout_width="@dimen/x200" android:layout_height="@dimen/x200" />
+        <ImageView android:id="@id/iv_item_circle" android:background="@drawable/my_sound_circle" android:layout_width="@dimen/x200" android:layout_height="@dimen/x200" />
+        <ImageView android:id="@id/iv_item_icon" android:layout_width="@dimen/x200" android:layout_height="@dimen/x200" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_5x" android:textColor="@color/text_color_music_list" android:gravity="center" android:id="@id/tv_item_name" android:padding="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3D环绕" />
+    <TextView android:textSize="@dimen/text_size_2x" android:textColor="@color/text_color_music_list_detail" android:gravity="center" android:id="@id/tv_item_detail" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="立体环绕，不限设备" />
+</LinearLayout>

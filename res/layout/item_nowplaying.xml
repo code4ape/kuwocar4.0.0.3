@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_indicator" android:background="@color/text_color_main_selected" android:layout_width="@dimen/x4" android:layout_height="@dimen/x40" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_delete" android:padding="@dimen/padding_2x" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/btn_list_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_now_playing_anim" android:padding="@dimen/padding_2x" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/anim_list_playing" android:layout_toLeftOf="@id/iv_delete" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_4x" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/tv_song" android:padding="@dimen/padding_2x" android:paddingLeft="@dimen/padding_1x" android:paddingRight="@dimen/padding_1x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/iv_now_playing_anim" android:layout_toRightOf="@id/iv_indicator" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.kuwo.base.uilib.CircleImageView android:id="@id/iv_cover" android:layout_width="@dimen/x200" android:layout_height="@dimen/x200" android:src="#ff00ff00" />
+    <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_music_list" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_name" android:paddingLeft="@dimen/padding_2x" android:paddingRight="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="告白气球" android:maxLines="1" android:lines="1" />
+</LinearLayout>

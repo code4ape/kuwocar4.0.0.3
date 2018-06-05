@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/x400" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_color_item_mv_playlist" android:layout_width="@dimen/x400" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_play_indictor" android:background="@color/text_color_music_list_selected" android:layout_width="@dimen/x4" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_5x" android:id="@id/tv_name" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_4x" android:id="@id/tv_artist" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

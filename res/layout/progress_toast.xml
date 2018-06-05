@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_icon" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/volume_adjust" />
+    <cn.kuwo.ui.view.RoundProgressBar android:id="@id/progressbar" android:layout_width="120.0dip" android:layout_height="120.0dip" android_custom:roundColor="#33ffffff" android_custom:roundProgressColor="#fffacd2c" android_custom:roundWidth="5.0dip" />
+</FrameLayout>

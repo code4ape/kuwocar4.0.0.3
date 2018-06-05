@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/radio_playing_01" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_02" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_03" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_04" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_05" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_06" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_07" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_08" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_09" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_10" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_11" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_12" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_13" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_14" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_15" />
+    <item android:duration="100" android:drawable="@drawable/radio_playing_16" />
+</animation-list>

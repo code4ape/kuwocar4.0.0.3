@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="384.0dip" android:layout_height="0.0dip" android:layout_weight="9.0">
+        <ImageView android:id="@id/iv_skin_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/iv_skin_using" android:layout_width="@dimen/x80" android:layout_height="@dimen/x80" android:src="@drawable/my_icon_skin_use" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_music_list" android:gravity="center" android:id="@id/tv_skin_name" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_below="@id/iv_skin_cover" android:layout_centerHorizontal="true" />
+</LinearLayout>

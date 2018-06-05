@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_search_history_hotwords" android:gravity="center" android:id="@id/tv_text" android:background="@drawable/text_search_shape" android:padding="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

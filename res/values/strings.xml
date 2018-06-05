@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_kuwo_content">"声明
+
+此版本适用于Android 系列设备，如在其他品牌或型号的设备上使用本软件，对于出现的任何问题，酷我公司不承担责任。本软件的下载、安装完全免费，使用过程中产生的数据流量费用，由运营商收取。"</string>
+    <string name="about_kuwo_content2">酷我公司在此提醒：酷我产品，包括酷我音乐网页、PC客户端软件以及酷我音乐各移动客户端软件（包括但不限于IOS、Android、iPad等系统的客户端软件）皆系酷我公司享有完全权利的产品。其酷我产品因用户使用的终端或系统不同而有所差异，但内容均同源，均来自同一数据库，同一内容在酷我公司数据库中只存储在同一位置上，因终端、系统、软件的不同而使得用户感知其表现形式有差异，此非由酷我公司控制。</string>
+    <string name="about_kuwo_content3">"
+
+服务地区限制说明
+
+非常抱歉，由于版权限制，当您在中国大陆以外地区使用酷我音乐时，将无法使用在线音乐服务，酷我音乐仅提供本地播放和管理等离线音乐服务，非常感谢您的理解。"</string>
+    <string name="alert_no_sdcard">SD卡不可用</string>
+    <string name="app_name">酷我音乐</string>
+    <string name="auto_select">自动选择</string>
+    <string name="copyright">"北京酷我科技有限公司 版权所有
+Copyright ©2005-2017 Kuwo All Rights Reserved"</string>
+    <string name="do_not_have_sdcard">您的设备中没有存储卡</string>
+    <string name="download_no_path">下载目录不存在</string>
+    <string name="ff_qulity">无损音质</string>
+    <string name="first_download">优先下载</string>
+    <string name="h_qulity">高品音质</string>
+    <string name="network_no_available">网络不可得</string>
+    <string name="notification_default">听音乐用酷我！</string>
+    <string name="p_qulity">超品音质</string>
+    <string name="qulity_select">下载音质选择</string>
+    <string name="s_qulity">流畅音质</string>
+    <string name="text_item_name_audio_content">有声</string>
+    <string name="text_item_name_local">本地</string>
+    <string name="text_item_name_mine">我的</string>
+    <string name="text_item_name_music_lib">乐库</string>
+    <string name="text_item_name_radio">电台</string>
+    <string name="version">酷我车载版</string>
+</resources>

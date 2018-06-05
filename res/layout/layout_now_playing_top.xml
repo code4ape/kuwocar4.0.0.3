@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="@dimen/y60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top_home" android:padding="@dimen/padding_1x" android:layout_width="@dimen/x50" android:layout_height="@dimen/x50" android:layout_marginLeft="@dimen/padding_2x" android:layout_marginRight="@dimen/padding_2x" android:src="@drawable/home_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_title" android:id="@id/tv_similar_song" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_4x" android:text="相似歌曲" android:layout_toLeftOf="@id/iv_back" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_back" android:padding="2.0dip" android:layout_width="@dimen/x50" android:layout_height="@dimen/x50" android:layout_marginLeft="@dimen/padding_4x" android:src="@drawable/btn_now_playing_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

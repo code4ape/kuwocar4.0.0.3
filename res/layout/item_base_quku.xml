@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_item_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_cover" android:background="@drawable/page_card_cover_big" android:padding="@dimen/padding_music_lib_cover" android:layout_width="@dimen/x240" android:layout_height="@dimen/x240" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/page_card_icon_circle_big" android:layout_centerInParent="true" />
+        <cn.kuwo.base.uilib.CircleImageView android:id="@id/iv_item_cover" android:layout_width="@dimen/x180" android:layout_height="@dimen/x180" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_item_cover2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_play2" android:padding="@dimen/padding_1x" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/page_card_icon_big_play" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_play1" android:padding="@dimen/padding_1x" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/page_card_icon_big_play" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_music_list" android:gravity="center" android:id="@id/tv_item_name" android:background="@drawable/pagecard_text_bg_big" android:padding="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="@dimen/y120" android:text="感动想哭" android:lines="2" android:ems="8" />
+</LinearLayout>

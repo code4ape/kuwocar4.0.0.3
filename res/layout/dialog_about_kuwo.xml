@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shap_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_4x" android:textColor="@color/text_color_dialog_title" android:gravity="center" android:padding="@dimen/padding_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关于酷我" />
+    <View android:background="@color/background_cute_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_dialog_content" android:id="@id/tv_version" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_dialog_content" android:id="@id/tv_copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/copyright" />
+            <TextView android:textSize="@dimen/text_size_3x" android:textStyle="bold" android:textColor="@color/text_color_dialog_content" android:id="@id/tv_content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_kuwo_content" />
+            <TextView android:textSize="@dimen/text_size_3x" android:textColor="@color/text_color_dialog_content" android:id="@id/tv_content2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_kuwo_content2" />
+            <TextView android:textSize="@dimen/text_size_3x" android:textStyle="bold" android:textColor="@color/text_color_dialog_content" android:id="@id/tv_content3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_kuwo_content3" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
