@@ -169,6 +169,14 @@
 
 .method private a(Lcn/kuwo/service/DownloadProxy$DownType;)Ljava/util/LinkedList;
     .locals 3
+	const-string v0,"downloadmgr private  a(DownType)"
+	
+	invoke-virtual {p1},Lcn/kuwo/service/DownloadProxy$DownType;->toString()Ljava/lang/String;
+	
+	move-result-object v1
+	
+	invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
 
     invoke-virtual {p1}, Lcn/kuwo/service/DownloadProxy$DownType;->ordinal()I
 
@@ -622,6 +630,14 @@
 
     move-result v1
 
+	invoke-virtual {p3},Lcn/kuwo/service/DownloadProxy$Quality;->toString()Ljava/lang/String;
+	
+	move-result-object v2
+	
+	
+	const-string v3, "=========="
+	
+	invoke-static {v3, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     iput v1, v0, Lcn/kuwo/service/downloader/FinalDownloadTask;->a:I
 
     iput-object p2, v0, Lcn/kuwo/service/downloader/FinalDownloadTask;->f:Lcn/kuwo/service/DownloadProxy$DownType;
@@ -640,6 +656,12 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+	invoke-virtual {p3},Lcn/kuwo/service/DownloadProxy$Quality;->toString()Ljava/lang/String;
+	
+	move-result-object v3
+	
+	invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+	
     const-string v3, "addTask:"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -670,6 +692,8 @@
 
     invoke-static {v1, v2}, Lcn/kuwo/base/log/LogMgr;->c(Ljava/lang/String;Ljava/lang/String;)V
 
+	invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     invoke-direct {p0, v0}, Lcn/kuwo/service/downloader/DownloadMgr;->add(Lcn/kuwo/service/downloader/FinalDownloadTask;)V
 
     iget v0, v0, Lcn/kuwo/service/downloader/FinalDownloadTask;->a:I
@@ -724,6 +748,7 @@
 
     invoke-static {v1, v2}, Lcn/kuwo/base/log/LogMgr;->c(Ljava/lang/String;Ljava/lang/String;)V
 
+	invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     invoke-direct {p0, v0}, Lcn/kuwo/service/downloader/DownloadMgr;->add(Lcn/kuwo/service/downloader/FinalDownloadTask;)V
 
     iget v0, v0, Lcn/kuwo/service/downloader/FinalDownloadTask;->a:I

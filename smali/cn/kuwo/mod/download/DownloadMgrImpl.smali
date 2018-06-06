@@ -1064,6 +1064,14 @@
 
     move-result v0
 
+	const-string v2, "==DownloadMgrImpl======"
+	
+	invoke-static {v2, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	invoke-virtual {v3},Lcn/kuwo/service/DownloadProxy$Quality;->toString()Ljava/lang/String;
+	
+	move-result-object v2
+	
+	invoke-static {v2, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     iput v0, v7, Lcn/kuwo/base/bean/DownloadTask;->a:I
 
     :cond_3
@@ -1092,6 +1100,7 @@
 
     move-result-object v2
 
+	invoke-static {v2, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     invoke-static {v0, v2}, Lcn/kuwo/base/log/LogMgr;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     iput-object p2, v1, Lcn/kuwo/base/bean/Music;->v:Lcn/kuwo/service/DownloadProxy$Quality;
