@@ -534,7 +534,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->f:Lcn/kuwo/service/DownloadProxy$DownType;
+    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->c:Lcn/kuwo/service/DownloadProxy$DownType;
 
     goto :goto_1
 .end method

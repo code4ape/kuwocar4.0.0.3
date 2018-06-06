@@ -84,7 +84,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f090010
+    const v3, 0x7f090009
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -102,7 +102,7 @@
 
     invoke-virtual {v3, v2}, Lcn/kuwo/ui/adapter/ListDialogAdapter$ListDialogItem;->setName(Ljava/lang/String;)V
 
-    const/4 v2, 0x1
+    const/4 v2, 0x4
 
     invoke-virtual {v3, v2}, Lcn/kuwo/ui/adapter/ListDialogAdapter$ListDialogItem;->setId(I)V
 

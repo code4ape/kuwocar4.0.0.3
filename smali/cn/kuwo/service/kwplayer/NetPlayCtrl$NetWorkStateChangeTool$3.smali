@@ -50,7 +50,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->f:Lcn/kuwo/service/DownloadProxy$DownType;
+    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->c:Lcn/kuwo/service/DownloadProxy$DownType;
 
     iget-object v3, p0, Lcn/kuwo/service/kwplayer/NetPlayCtrl$NetWorkStateChangeTool$3;->this$1:Lcn/kuwo/service/kwplayer/NetPlayCtrl$NetWorkStateChangeTool;
 

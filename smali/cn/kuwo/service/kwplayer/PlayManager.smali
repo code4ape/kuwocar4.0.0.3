@@ -1394,7 +1394,7 @@
 
     move-result-object v0
 
-    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->b:Lcn/kuwo/service/DownloadProxy$DownType;
+    sget-object v2, Lcn/kuwo/service/DownloadProxy$DownType;->c:Lcn/kuwo/service/DownloadProxy$DownType;
 
     invoke-static {}, Lcn/kuwo/service/DownloadProxy$Quality;->values()[Lcn/kuwo/service/DownloadProxy$Quality;
 
