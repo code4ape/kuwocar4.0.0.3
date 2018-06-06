@@ -302,6 +302,9 @@
 
 .method public b(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
+	const-string v0,"CloudListData public b(String,String)V"
+	invoke-static {v0, p1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	invoke-static {p1, p2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
 
     const-string v0, "info"
 
@@ -356,15 +359,34 @@
     if-eqz v0, :cond_3
 
     :try_start_0
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static {p2}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+	invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
-    move-result v0
+    move-result-wide v0
+	
+	const-wide v4,0x7fffffff
+	
+	cmp-long v2,v0,v4
+	
+	if-gez v2,:cond_9
 
+	long-to-int v0,v0
+	
     iput v0, p0, Lcn/kuwo/mod/list/CloudListData;->b:I
+	
+	goto :try_end_0
+	
+	:cond_9
+	sub-long/2addr v0,v4
+	long-to-int v0,v0
+	iput v0, p0, Lcn/kuwo/mod/list/CloudListData;->b:I
+	
+	const-string v0, "cast new int pid for longid -.- -.-"
+	invoke-static {p1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+   
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
