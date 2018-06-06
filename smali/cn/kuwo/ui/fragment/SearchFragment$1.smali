@@ -27,7 +27,7 @@
 
     if-nez p2, :cond_0
 
-    invoke-static {p1}, Lcn/kuwo/base/util/KeyBoardUtils;->hideKeyboard(Landroid/view/View;)V
+    invoke-static {}, Lcn/kuwo/base/util/KeyBoardUtils;->hideKeyboard()V
 
     :cond_0
     return-void

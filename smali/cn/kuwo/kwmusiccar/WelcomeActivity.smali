@@ -98,6 +98,35 @@
     return v0
 .end method
 
+.method private fs()V
+    .registers 3
+
+    .prologue
+    const/16 v1, 0x400
+
+    .line 30
+    invoke-virtual {p0}, Lcn/kuwo/kwmusiccar/WelcomeActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1, v1}, Landroid/view/Window;->setFlags(II)V
+
+    .line 33
+    invoke-virtual {p0}, Lcn/kuwo/kwmusiccar/WelcomeActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    const/16 v1, 0x1706
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    .line 44
+    return-void
+.end method
 .method private hideNavigationBar()V
     .locals 2
 
@@ -111,7 +140,7 @@
 
     const/16 v1, 0x1506
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
+    invoke-direct {p0}, Lcn/kuwo/kwmusiccar/WelcomeActivity;->fs()V
 
     return-void
 .end method
@@ -399,6 +428,7 @@
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
+	invoke-direct {p0}, Lcn/kuwo/kwmusiccar/WelcomeActivity;->fs()V
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -699,5 +729,34 @@
 
     invoke-super {p0}, Landroid/support/v4/app/FragmentActivity;->onResume()V
 
+    return-void
+.end method
+
+.method public onWindowFocusChanged(Z)V
+    .registers 4
+    .param p1, "hasFocus"    # Z
+
+    .prologue
+    .line 17
+    invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onWindowFocusChanged(Z)V
+
+    .line 18
+    if-eqz p1, :cond_12
+
+    .line 19
+    invoke-virtual {p0}, Lcn/kuwo/kwmusiccar/WelcomeActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    const/16 v1, 0x1706
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    .line 27
+    :cond_12
     return-void
 .end method
