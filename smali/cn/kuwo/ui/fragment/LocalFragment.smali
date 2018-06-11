@@ -55,7 +55,7 @@
     move-result-object v0
 
     check-cast v0, Lcn/kuwo/base/bean/MusicList;
-
+	
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -102,6 +102,16 @@
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+		
+
+	invoke-virtual {v0},Lcn/kuwo/base/bean/MusicList;->toString()Ljava/lang/String;
+	
+	move-result-object v0
+	
+	const-string v3, "===LocalFragment private update() kuwo local music list======="
+	
+	invoke-static {v3, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     goto :goto_1
 
     :cond_1

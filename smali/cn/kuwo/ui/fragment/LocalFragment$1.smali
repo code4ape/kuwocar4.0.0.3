@@ -47,6 +47,14 @@
 
     invoke-static {v0}, Lcn/kuwo/ui/JumpUtils;->jump(Lcn/kuwo/base/bean/MusicList;)V
 
+	invoke-virtual {v0},Lcn/kuwo/base/bean/MusicList;->toString()Ljava/lang/String;
+	
+	move-result-object v0
+	
+	const-string v1, "===LocalFragment $1 onItemClick! JumpUtils.jump to MusicList======="
+	
+	invoke-static {v1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     goto :goto_0
 
     :sswitch_1

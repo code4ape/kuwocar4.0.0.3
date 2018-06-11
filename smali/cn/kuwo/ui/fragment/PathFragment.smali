@@ -90,13 +90,21 @@
     invoke-virtual {v0}, Lcn/kuwo/base/bean/MusicList;->d()Ljava/lang/String;
 
     move-result-object v3
-
+	
+	const-string v5, "===PathFragment private update() ModMgr.g().h()iterator() next().d in? music======="
+	
+	invoke-static {v5, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     iget-object v4, p0, Lcn/kuwo/ui/fragment/PathFragment;->diskMusiclist:Lcn/kuwo/base/bean/MusicList;
 
     invoke-virtual {v4}, Lcn/kuwo/base/bean/MusicList;->d()Ljava/lang/String;
 
     move-result-object v4
-
+	
+	const-string v5, "===PathFragment private update() diskMusiclist.d contains? music======="
+	
+	invoke-static {v5, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -106,7 +114,8 @@
     invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
-
+	
+	
     if-eqz v3, :cond_1
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -152,9 +161,18 @@
     invoke-virtual {v3, v4}, Lcn/kuwo/ui/adapter/KuwoLocalAdapter$KuwoLocalItem;->setType(I)V
 
     invoke-virtual {v3, v0}, Lcn/kuwo/ui/adapter/KuwoLocalAdapter$KuwoLocalItem;->setMusicList(Lcn/kuwo/base/bean/MusicList;)V
-
+	
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
+	
+		
+	invoke-virtual {v0},Lcn/kuwo/base/bean/MusicList;->toString()Ljava/lang/String;
+	
+	move-result-object v0
+	
+	const-string v3, "===PathFragment private update() KuwoLocalItem setMusicList======="
+	
+	invoke-static {v3, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
     goto :goto_2
 
     :cond_3
@@ -261,6 +279,10 @@
     move-result-object v0
 
     iput-object v0, p0, Lcn/kuwo/ui/fragment/PathFragment;->diskName:Ljava/lang/String;
+	
+	const-string v1, "===PathFragment onViewCreated  PathFragment.diskName======="
+	
+	invoke-static {v1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
 
     invoke-static {}, Lcn/kuwo/core/modulemgr/ModMgr;->g()Lcn/kuwo/mod/localmgr/ILocalMgr;
 
@@ -276,6 +298,12 @@
 
     iput-object v0, p0, Lcn/kuwo/ui/fragment/PathFragment;->diskMusiclist:Lcn/kuwo/base/bean/MusicList;
 
+	const-string v1, "===PathFragment onViewCreated  PathFragment.diskMusiclist======="
+	invoke-virtual {v0},Lcn/kuwo/base/bean/MusicList;->toString()Ljava/lang/String;
+	move-result-object v0
+	invoke-static {v1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	
+	
     :cond_0
     const v0, 0x7f0b006c
 
