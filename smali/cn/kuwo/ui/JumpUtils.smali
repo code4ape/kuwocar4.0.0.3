@@ -335,15 +335,32 @@
     invoke-virtual {p0}, Lcn/kuwo/base/bean/MusicList;->a()Ljava/lang/String;
 
     move-result-object v2
+	
+	const-string v3, "=====JumpUtils->jump(MusicList)  listshowname====="
+	
+	invoke-static {v3, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
+	invoke-virtual {p0}, Lcn/kuwo/base/bean/MusicList;->toString()Ljava/lang/String;
+
+    move-result-object v2
+	
+	const-string v3, "=====JumpUtils->jump(MusicList)  musiclist.toString()====="
+	
+	invoke-static {v3, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+	
+	
     const-string v1, "key_music_list_name"
 
-    invoke-virtual {p0}, Lcn/kuwo/base/bean/MusicList;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcn/kuwo/base/bean/MusicList;->a()Ljava/lang/String;
 
     move-result-object v2
 
+	const-string v3, "=====JumpUtils->jump(MusicList)  key_music_list_name====="
+	
+	invoke-static {v3, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+	
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "key_music_list_type"
@@ -378,8 +395,8 @@
 
     move-result-object v1
 
-    const-string v2, "LocalDiskList"
-
+	const-string v2, "LocalDiskList"
+	
     const-class v3, Lcn/kuwo/ui/fragment/PathFragment;
 
     invoke-virtual {v1, v2, v3, v0}, Lcn/kuwo/ui/fragment/KwFragmentController;->showFragment(Ljava/lang/String;Ljava/lang/Class;Landroid/os/Bundle;)Lcn/kuwo/ui/fragment/BaseKuwoFragment;

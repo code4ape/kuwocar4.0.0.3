@@ -487,10 +487,13 @@
     invoke-virtual {v2, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
-
+	
     if-eqz v4, :cond_0
 
     :goto_0
+	const-string v1, "===LocalMgrImpl private string b(music) compare filepaths:======="
+	invoke-static {v1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
+	invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     return-object v0
 
     :cond_1
@@ -729,13 +732,17 @@
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+	const-string v1, "===LocalMgrImpl private void c(music) check MusicListMem======="
+	invoke-virtual {v0},Lcn/kuwo/base/bean/MusicListMem;->toString()Ljava/lang/String;
+	move-result-object v2
+	invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I 
     goto :goto_0
 
     :cond_2
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
-
+	
     invoke-virtual {v0, v1}, Lcn/kuwo/base/bean/MusicListMem;->c(Ljava/lang/String;)V
 
     goto :goto_1
@@ -1557,7 +1564,7 @@
 
     check-cast v0, Lcn/kuwo/base/bean/MusicList;
 
-    invoke-virtual {v0}, Lcn/kuwo/base/bean/MusicList;->getName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcn/kuwo/base/bean/MusicList;->a()Ljava/lang/String;
 
     move-result-object v3
 
