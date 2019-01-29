@@ -4383,9 +4383,9 @@
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0, p1}, Lcn/kuwo/mod/list/CloudMgrImpl;->a(Lcn/kuwo/mod/list/CloudListData;)Z
+    #invoke-virtual {p0, p1}, Lcn/kuwo/mod/list/CloudMgrImpl;->a(Lcn/kuwo/mod/list/CloudListData;)Z
 
-    move-result v0
+    #move-result v0
 
     goto :goto_0
 

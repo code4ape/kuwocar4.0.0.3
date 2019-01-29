@@ -36,7 +36,7 @@
 
     iput v0, p0, Lcn/kuwo/base/log/DebugLogger;->c:I
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcn/kuwo/base/log/DebugLogger;->a:Z
 
@@ -493,7 +493,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1, p2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
